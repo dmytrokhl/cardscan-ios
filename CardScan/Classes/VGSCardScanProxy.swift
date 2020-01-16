@@ -11,7 +11,6 @@ import Foundation
 import UIKit
 #endif
 
-#if canImport(VGSCollectSDK)
 import VGSCollectSDK
 
 public class VGSCardScanProxy: VGSScanProviderProtocol {
@@ -63,4 +62,3 @@ extension VGSCardScanProxy: ScanDelegate {
         delegate?.userDidFinishScan?()
     }
 }
-#endif
